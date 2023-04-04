@@ -57,4 +57,11 @@ export default defineNuxtConfig({
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  generate: {
+    routes: [
+      '/blog/:pageSlug',
+      // add additional dynamic routes here as needed
+    ]
+  }
 })
