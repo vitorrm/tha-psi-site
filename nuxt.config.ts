@@ -62,6 +62,6 @@ export default defineNuxtConfig({
     routes: [
       '/blog/:pageSlug',
       // add additional dynamic routes here as needed
-    ]
-  }
+    ],
+  },
 })
