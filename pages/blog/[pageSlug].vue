@@ -19,6 +19,7 @@ const { pageSlug } = useRoute().params
 const result = await useAsyncData('page-detail', () =>
   queryContent<Page>(`pages/${pageSlug}`).findOne()
 )
+console.log('Page found', result)
 const page = result.data.value!
 useHead({
   title: page.title,
