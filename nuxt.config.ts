@@ -1,16 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import fs from 'fs'
-import path from 'path'
-
-// const generateContentRoutes = function () {
-//   const routes = fs.readdirSync('./content/pages').map((file) => {
-//     return {
-//       route: `/blog/${path.parse(file).name}`, // Return the slug
-//       payload: require(`./content/pages/${file}`),
-//     }
-//   })
-//   return routes
-// }
 
 export default defineNuxtConfig({
   modules: [
@@ -27,7 +15,41 @@ export default defineNuxtConfig({
         lang: 'pt-br',
       },
       meta: [
-        { name: 'description', content: 'Everything about Nuxt 3' },
+        {
+          name: 'description',
+          content:
+            'Encontre acolhimento e qualidade ética na psicoterapia clínica presencial ou online com a psicóloga Thainara Rocha em Leme-SP',
+        },
+        { name: 'og:type', content: 'website' },
+        {
+          name: 'og:description',
+          content:
+            'Encontre acolhimento e qualidade ética na psicoterapia clínica presencial ou online com a psicóloga Thainara Rocha em Leme-SP',
+        },
+        {
+          name: 'og:title',
+          content:
+            'Thainara Rocha em Leme-SP | Presencial e Online | Ivana Tomaz Psicóloga | Em Leme-SP e Online',
+        },
+        {
+          name: 'og:site_name',
+          content: 'Thainara Rocha Psicóloga | Em Leme-SP e Online',
+        },
+        {
+          name: 'twitter:title',
+          content:
+            'Thainara Rocha em Leme-SP | Presencial e Online | Ivana Tomaz Psicóloga | Em Leme-SP e Online',
+        },
+        {
+          name: 'twitter:description',
+          content:
+            'Encontre acolhimento e qualidade ética na psicoterapia clínica presencial ou online com a psicóloga Thainara Rocha em Leme-SP',
+        },
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        { name: 'keywords', content: 'Psicóloga, Leme, Atendimento' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       ],
       script: [

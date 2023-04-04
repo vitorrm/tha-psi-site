@@ -1,12 +1,14 @@
+import { ParsedContent } from "@nuxt/content/dist/runtime/types"
+
 declare global {
   interface Window {
     __NUXT__: { state: RootState }
   }
 }
 
-interface Post {
-  title: string
+export interface Post extends ParsedContent {
   slug?: string
+  title: string
   excerpt?: string
   content: string
   publishedAt: string
@@ -15,10 +17,10 @@ interface Post {
   seoMetaImage?: string
 }
 
-interface Page {
+export interface Page extends ParsedContent {
+  slug?: string
   title: string
   subtitle?: string
-  slug?: string
   content: string
   featuredImage?: string
   seoDescription?: string
