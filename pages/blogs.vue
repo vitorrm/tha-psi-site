@@ -7,8 +7,7 @@
 </template>
 
 <script setup lang="ts">
-const { data } = await useAsyncData('first-article', () =>
+const { data: posts } = await useAsyncData('first-article', () =>
   queryContent<Post>('blog').find()
 )
-const posts = data
 </script>

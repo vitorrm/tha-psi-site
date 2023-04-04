@@ -1,4 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import fs from 'fs'
+import path from 'path'
+
+// const generateContentRoutes = function () {
+//   const routes = fs.readdirSync('./content/pages').map((file) => {
+//     return {
+//       route: `/blog/${path.parse(file).name}`, // Return the slug
+//       payload: require(`./content/pages/${file}`),
+//     }
+//   })
+//   return routes
+// }
+
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
