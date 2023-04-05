@@ -1,12 +1,12 @@
 <template>
-  <header class="w-full bg-black text-gray-100 body-font mb-4 shadow-sm">
+  <header class="w-full bg-black text-gray-100 body-font mb-0 shadow-sm">
     <NavBar :links="links" />
   </header>
 </template>
 
 <script lang="ts" setup>
-import NavBar from '~/components/commons/NavBar.vue'
 import NavLink from '~/types/NavLink'
+import NavBar from '../commons/NavBar.vue';
 
 const links: NavLink[] = []
 links.push({ href: '/', title: 'Início' } as NavLink)

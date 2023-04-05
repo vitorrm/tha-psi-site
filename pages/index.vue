@@ -1,5 +1,6 @@
 <template>
-  <p>Test2</p>
+  <MainHero />
+  <Testimonials />
   <li v-for="page of extraPages" :key="page._path">
     <NuxtLink :to="page.slug">{{ page.title }} - {{ page.slug }}</NuxtLink>
   </li>

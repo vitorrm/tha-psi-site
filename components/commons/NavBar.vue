@@ -38,7 +38,7 @@
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="h-8 w-8 rounded-md text-gray-300 bg-gradient-to-br from-transparent to-transparent hover:text-white hover:from-pink-500 hover:to-yellow-500"
+        class="h-8 w-8 rounded-md text-gray-300 bg-gradient-to-br from-transparent to-transparent hover:text-white hover:from-pink-200 hover:to-slate-400"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"

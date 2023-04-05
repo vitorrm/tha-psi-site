@@ -1,6 +1,7 @@
 <template>
-  <main class="main px-3 md:px-0">
-    <Header />
+  <a href="#main-content" class="sr-only focus:not-sr-only">Skip to content </a>
+  <Header />
+  <main id="main-content" class="main px-3 md:px-0">
     <slot />
     <!--<site-footer /> -->
   </main>
