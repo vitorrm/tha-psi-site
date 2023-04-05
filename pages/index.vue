@@ -1,10 +1,8 @@
 <template>
-  <NuxtLayout name="pure">
-    <p>Test2</p>
-    <li v-for="page of extraPages" :key="page._path">
-      <NuxtLink :to="page.slug">{{ page.title }} - {{ page.slug }}</NuxtLink>
-    </li>
-  </NuxtLayout>
+  <p>Test2</p>
+  <li v-for="page of extraPages" :key="page._path">
+    <NuxtLink :to="page.slug">{{ page.title }} - {{ page.slug }}</NuxtLink>
+  </li>
 </template>
 
 <script setup lang="ts">
