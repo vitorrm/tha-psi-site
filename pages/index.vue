@@ -1,11 +1,13 @@
 <template>
-  <p>Test</p>
-  <li v-for="page of extraPages" :key="page._path">
-    <NuxtLink :to="page.slug">{{ page.title }} - {{ page.slug }}</NuxtLink>
-  </li>
+  <NuxtLayout name="dev">
+    <p>Test2</p>
+    <li v-for="page of extraPages" :key="page._path">
+      <NuxtLink :to="page.slug">{{ page.title }} - {{ page.slug }}</NuxtLink>
+    </li>
+  </NuxtLayout>
 </template>
 
 <script setup lang="ts">
-import { getAllPages } from '~/content-utils';
+import { getAllPages } from '~/content-utils'
 const extraPages = await getAllPages()
 </script>

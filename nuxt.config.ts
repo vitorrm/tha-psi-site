@@ -66,10 +66,7 @@ export default defineNuxtConfig({
   image: {},
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '@/assets/css/main.scss',
-    '@fortawesome/fontawesome-svg-core/styles.css',
-  ],
+  css: ['@fortawesome/fontawesome-svg-core/styles.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -77,13 +74,5 @@ export default defineNuxtConfig({
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-
-  // generate: {
-  //   routes: [
-  //     '/blog/:pageSlug',
-  //     // add additional dynamic routes here as needed
-  //   ],
-  // },
 })
