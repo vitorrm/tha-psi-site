@@ -10,4 +10,4 @@
 import Header from '~/components/partials/Header.vue'
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">@import '~/assets/css/main.scss';</style>
