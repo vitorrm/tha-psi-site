@@ -5,10 +5,12 @@
     <slot />
     <!--<site-footer /> -->
   </main>
+  <Footer />
 </template>
 
 <script setup lang="ts">
 import Header from '~/components/partials/Header.vue'
+import Footer from '~/components/partials/Footer.vue'
 </script>
 
 <style lang="scss">

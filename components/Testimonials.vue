@@ -9,7 +9,7 @@
         <h2
           class="text-xl sm:text-3xl md:text-4xl text-gray-400 font-light font-serif tracking-wider uppercase"
         >
-          Client testimonials
+          DEPOIMENTOS
         </h2>
         <span class="ml-3 w-10 sm:w-20 h-0.5 bg-gray-500" />
       </div>
@@ -34,7 +34,7 @@
                 class="w-20 h-20 rounded-full border-2 border-indigo-50 overflow-hidden"
               >
                 <img
-                  src="{{person.picture}}"
+                  :src="person.picture"
                   alt=""
                   class="object-cover filter grayscale"
                 />

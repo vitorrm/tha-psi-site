@@ -15,11 +15,13 @@
 
 <script lang="ts" setup>
 import { Page } from '~/shims/contentTypes'
-import { useContentStore } from '~/store/content-store'
 const { pageSlug } = useRoute().params
 const result = await useAsyncData('page-detail', () =>
   queryContent<Page>(`pages/${pageSlug}`).findOne()
 )
+if (!result.data.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Page not found' })
+}
 const page = result.data.value!
 useHead({
   title: page.title,
@@ -29,7 +31,8 @@ useServerSeoMeta({
   description: page.seoDescription,
   ogImage: page.seoMetaImage,
 })
-const contentStore = useContentStore()
-contentStore.increment()
-console.log('incrementCounter', contentStore.counter)
+
+// const contentStore = useContentStore()
+// contentStore.increment()
+// console.log('incrementCounter', contentStore.counter)
 </script>

@@ -1,6 +1,6 @@
 <template>
   <a
-    href="#"
+    href="https://wa.me/5519982258558?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20psicoterapia%20individual."
     title="Agendar uma consulta no Whatsapp"
     target="_blank"
     rel="noopener"

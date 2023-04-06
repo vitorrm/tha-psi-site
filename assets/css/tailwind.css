@@ -10,4 +10,7 @@
         --tw-text-opacity: 1;
         color: #97A9BD
     }
+    .object-main-hero-position {
+        object-position: -150px 0
+    }
 }

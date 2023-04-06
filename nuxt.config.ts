@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
-      title: 'Nuxt Dojo',
+      title: 'Psicóloga - Thainara Rocha',
       htmlAttrs: {
         lang: 'pt-br',
       },

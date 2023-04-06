@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto flex justify-between items-center py-5 px-5">
     <a
-      href="#link"
+      href="/"
       class="flex flex-shrink-0 title-font font-medium items-center text-gray-900 md:mb-0 -mt-5"
     >
       <div class=" container flex bg-white rounded-b-2xl h-16 w-44 overflow-hidden">
